@@ -1,0 +1,30 @@
+{
+  "name": "lerna-monorepo-mr2",
+  "version": "0.0.0",
+  "description": "Management release example for Lerna monorepos.",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "postinstall": "lerna bootstrap",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davikawasaki/lerna-monorepo-mr2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davikawasaki/lerna-monorepo-mr2/issues"
+  },
+  "homepage": "https://github.com/davikawasaki/lerna-monorepo-mr2#readme",
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@commitlint/prompt": "11.0.0",
+    "commitizen": "4.2.2",
+    "git-cz": "4.7.6",
+    "husky": "4.3.5",
+    "lerna": "^3.22.1"
+  }
+}
