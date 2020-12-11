@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-dev.0](https://github.com/davikawasaki/lerna-monorepo-mr2/compare/lib@0.2.0-dev.0...lib@1.0.0-dev.0) (2020-12-11)
+
+
+### Reverts
+
+* **lib:** reverting lib greeting method ([adeeb4c](https://github.com/davikawasaki/lerna-monorepo-mr2/commit/adeeb4c256ea56d0ddfa995c1157d6285019a975))
+
+
+### BREAKING CHANGES
+
+* **lib:** Greeting method now uses the arg as string
+
+
+
+
+
 # [0.2.0-dev.0](https://github.com/davikawasaki/lerna-monorepo-mr2/compare/lib@0.1.0...lib@0.2.0-dev.0) (2020-12-11)
 
 
