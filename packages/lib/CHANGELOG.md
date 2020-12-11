@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0-dev.0](https://github.com/davikawasaki/lerna-monorepo-mr2/compare/lib@0.1.0...lib@0.2.0-dev.0) (2020-12-11)
+
+
+### Features
+
+* **lib:** greeting method with name inside object ([5a62c7c](https://github.com/davikawasaki/lerna-monorepo-mr2/commit/5a62c7c2d7af29b566a3360e13fc4b7a8d47c328))
+
+
+
+
+
 # 0.1.0 (2020-12-11)
 
 
