@@ -3,10 +3,10 @@ on:
   # a pull request. 
   push:
     paths:
-      - 'packages/app/**/*'
+      - 'packages/**/*'
     branches:
       - release
-name: Publish app prod tag
+name: Publish prod tags
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,4 +34,4 @@ jobs:
       - run: git config --global user.email "davishinjik@gmail.com"
       - run: git config --global user.name "Davi Kawasaki"
       - run: npm i
-      - run: npm run publish-app-prod
+      - run: npm run publish-packages-prod

@@ -6,10 +6,8 @@
   "scripts": {
     "commit": "git-cz",
     "postinstall": "lerna bootstrap",
-    "publish-lib-dev": "lerna version -m 'feat(release): tag lib release on dev' --conventional-commits --ignore-changes 'packages/app/**' --preid dev --yes",
-    "publish-app-dev": "lerna version -m 'feat(release): tag app release on dev' --conventional-commits --ignore-changes 'packages/lib/**' --preid dev --yes",
-    "publish-lib-prod": "lerna version -m 'chore(release): tag lib release on prod' --conventional-commits --ignore-changes 'packages/app/**' --conventional-graduate=lib --yes",
-    "publish-app-prod": "lerna version -m 'chore(release): tag app release on prod' --conventional-commits --ignore-changes 'packages/lib/**' --conventional-graduate=app --yes",
+    "publish-packages-dev": "lerna version -m 'chore(release): tag changed package releases on dev' --conventional-commits --conventional-prerelease=* --preid dev --yes",
+    "publish-packages-prod": "lerna version -m 'chore(release): tag changed package releases on prod' --conventional-commits --conventional-graduate=* --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,5 +28,10 @@
     "git-cz": "4.7.6",
     "husky": "4.3.5",
     "lerna": "^3.22.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }  
   }
 }
