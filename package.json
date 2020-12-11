@@ -6,6 +6,10 @@
   "scripts": {
     "commit": "git-cz",
     "postinstall": "lerna bootstrap",
+    "publish-lib-dev": "lerna version -m 'feat(release): tag lib release on dev' --conventional-commits --ignore-changes 'packages/app/**' --preid dev --yes",
+    "publish-app-dev": "lerna version -m 'feat(release): tag app release on dev' --conventional-commits --ignore-changes 'packages/lib/**' --preid dev --yes",
+    "publish-lib-prod": "lerna version -m 'chore(release): tag lib release on prod' --conventional-commits --ignore-changes 'packages/app/**' --conventional-graduate=lib --yes",
+    "publish-app-prod": "lerna version -m 'chore(release): tag app release on prod' --conventional-commits --ignore-changes 'packages/lib/**' --conventional-graduate=app --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
