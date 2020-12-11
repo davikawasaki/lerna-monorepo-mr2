@@ -6,8 +6,8 @@
   "scripts": {
     "commit": "git-cz",
     "postinstall": "lerna bootstrap",
-    "publish-packages-dev": "lerna version -m 'chore(release): tag changed package releases on dev' --conventional-commits --conventional-prerelease=* --preid dev --yes",
-    "publish-packages-prod": "lerna version -m 'chore(release): tag changed package releases on prod' --conventional-commits --conventional-graduate=* --yes",
+    "publish-packages-dev": "lerna version -m 'chore(release): tag changed package releases on dev' --conventional-commits --conventional-prerelease='*' --preid dev --yes",
+    "publish-packages-prod": "lerna version -m 'chore(release): tag changed package releases on prod' --conventional-commits --conventional-graduate='*' --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
